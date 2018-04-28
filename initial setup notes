@@ -4,6 +4,10 @@ vagrant init centos/7
 vagrant box add centos/7
 vagrant up
 
+sudo wim /etc/ssh/sshd.config
+change to all password auth  i esc :w :q
+PasswordAuthentication Yes
+
 mkdir openshift
 cd openshift
 vagant init openshift/origin-all-in-one
