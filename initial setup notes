@@ -1,0 +1,11 @@
+mkdir centos7
+cd centos7
+vagrant init centos/7
+vagrant box add centos/7
+vagrant up
+
+mkdir openshift
+cd openshift
+vagant init openshift/origin-all-in-one
+vagrant box add openshift/origin-all-in-one
+vagrant up
